@@ -1,0 +1,165 @@
+:root {
+    --background-color: #f2f5f5;
+    --secondary-color: #37b9f1;
+    --footer-color: #1b1b1b;
+    --text-color: #151515;
+    --label-color: #474748;
+    --heading-size: 4rem;
+    --responsive-heading-size:3rem;
+
+    --link-size: 1.25rem;
+    --quote-size: 1.5rem;
+    --responsive-quote-size:1.3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.logo {
+    height: 100px;
+    mix-blend-mode: multiply;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    font-size: var(--link-size);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.5s ease-in;
+}
+
+.navbar ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.signup {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.landingpage {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+
+    display: flex;
+}
+
+.imagecontent,
+.textcontent {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textcontent {
+    flex-direction: column;
+}
+
+.landingheading {
+    font-size: var(--heading-size);
+    color: rgb(53, 150, 246);
+}
+
+.landingquote {
+    font-size: var(--quote-size);
+    color: var(--text-color);
+}
+
+.landingpage img {
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
+/* Responsiveness */
+
+@media (max-width:500px) {
+
+    .header {
+        width: 100%;
+        min-height: 135vh;
+    }
+
+    .navbar {
+        padding: 20px;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .signup {
+        display: none;
+    }
+
+    .landingpage {
+        padding: 10px;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column-reverse;
+
+    }
+
+    .textcontent,
+    .imagecontent {
+        width: 100%;
+        text-align: center;
+    }
+
+    .landingheading {
+        font-size: var(--responsive-heading-size);
+    }
+
+    .landingquote {
+        font-size: var(--responsive-quote-size);
+    }
+
+    .imagecontent img {
+        height: 300px;
+    }
+
+
+
+}

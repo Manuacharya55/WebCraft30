@@ -1,0 +1,218 @@
+:root{
+    --background-color:white;
+    --highlight-color: #005050;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom right, #005050, #00a371);
+}
+
+.productcardholder {
+    max-width: 950px;
+    border-radius: 8px;
+    background-color:var(--background-color);
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+}
+
+.productimage,
+.productdetail {
+    width: 475px;
+    height: 100%;
+}
+
+.productimage img {
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.active{
+    border: 2px solid black;
+}
+.productdetail {
+    padding: 20px;
+
+}
+
+.productname span {
+    padding: 5px 10px;
+    color: var(--background-color);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: var(--highlight-color);
+}
+
+.category {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.info {
+    margin-top: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.productinfo {
+    font-size: 1.1rem;
+}
+
+.colors ,.sizes{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.green {
+    background-color: #005050;
+}
+
+.black {
+    background-color: black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.greenwhite {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.size {
+    width: 35px;
+    height: 35px;
+    padding: 8px 0px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(226, 226, 225);
+    border-radius: 5px;
+}
+
+.sizeactive{
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+}
+.cart{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addtocart {
+    margin: 15px;
+    padding: 10px 15px;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    font-weight: 600;
+}
+
+i {
+    color: var(--background-color);
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.price i {
+    color: black;
+}
+
+.allimages img{
+    margin-top: 10px;
+    height: 60px;
+}
+
+/* responsive design */
+
+@media (max-width:949px) {
+
+    .productcardholder {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .productimage,
+    .productdetail {
+        width: 100%;
+    }
+
+    .productimage img {
+        width: 100%;
+    }
+
+    .productname {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .productname span {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .color {
+        margin: 0 5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .size {
+        width: 30px;
+        height: 30px;
+    }
+
+    .price{
+        font-size: 1.3rem;
+    }
+}

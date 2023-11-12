@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.sub-container {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background: rgb(36, 34, 34);
+    flex-direction: column;
+}
+
+.navbar {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 90%;
+    height: 10vh;
+    background-color: white;
+    border-radius: 20px;
+
+    justify-content: space-around;
+}
+
+.navbar img{
+    height: 70px;
+    mix-blend-mode: multiply;
+}
+
+.header button {
+    margin-bottom: 50px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+}
+
+.header h1 {
+    margin-top: 50px 0px;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.header p {
+    margin: 50px 0px;
+    color: white;
+    text-align: center;
+}
+
+
+.root {
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.root .subcontainer-img {
+    align-self: flex-end;
+}
+
+.subcontainer-img img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.root .subcontainer-img:last-child {
+    align-self: flex-start;
+}
+
+.root .subcontiner-content {
+    padding: 30px;
+    gap: 4vh;
+    flex-direction: column;
+}
+
+
+.leadership {
+    padding: 20px;
+}
+
+.leadership h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.leadership .leaders {
+    width: 100%;
+    margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.leadership .leaders .people {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.people img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.people .role {
+    width: 90%;
+    height: 50px;
+
+    margin: auto;
+    padding: 5px 10px;
+    
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(5%);
+
+    position: absolute;
+    bottom: 20px;
+}
+
+
+.values {
+    min-height: 60vh;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+}
+
+.values h1 {
+    font-size: 3rem;
+}
+
+.value-holder,
+.image-holder {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.value {
+    width: 250px;
+    height: 270px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.value p {
+    margin-top: 15px;
+}
+
+.value:nth-of-type(odd) {
+    background-color: violet;
+}
+
+.value:nth-child(even) {
+    background-color: lightsalmon;
+}
+
+.image {
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    padding: 50px 20px 20px 20px;
+    color: white;
+    background: rgb(36, 34, 34);
+    
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer img{
+    height: 100px;
+    
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 10px 0px;
+}
+
+.footer ul li:first-child {
+    margin-bottom: 15px;
+    color: violet;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+@media (max-width:700px) {
+    .root {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="logo"><a href="#">Coding Zone</a></li>
+                <li class="hideonmoile"><a href="#">Home</a></li>
+                <li class="hideonmoile"><a href="#">Blog</a></li>
+                <li class="hideonmoile"><a href="#">Products</a></li>
+                <li class="hideonmoile"><a href="#">About Us</a></li>
+                <li class="hideonmoile"><a href="#">Contact</a></li>
+                <li class="hamburger"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+
+            <ul class="sidebar">
+                <li class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>  
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const close = document.querySelector('.close');
+        const sidebar = document.querySelector('.sidebar');
+
+        hamburger.addEventListener('click',()=>{
+            sidebar.style.display = "flex"
+        })
+
+        close.addEventListener('click',()=>{
+            sidebar.style.display = "none"
+        })
+    </script>
+</body>
+</html>

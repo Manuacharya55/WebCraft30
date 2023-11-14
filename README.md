@@ -7,5 +7,5 @@
 |Day-4| Landing Page | [Demo](https://manuacharya55.github.io/WebCraft30/Day-4/)|
 |Day-5| About Us Page | [Demo](https://manuacharya55.github.io/WebCraft30/Day-5/)|
 |Day-6| Responsive Navbar | [Demo](https://manuacharya55.github.io/WebCraft30/Day-6/)|
-|Day-7| Pricing Table |
+|Day-7| Pricing Table |  [Demo](https://manuacharya55.github.io/WebCraft30/Day-7/)|
 |Day-8| Tribute Page |

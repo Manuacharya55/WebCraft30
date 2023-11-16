@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&family=Quicksand&display=swap');
+
+
+:root {
+    --background: #e30047;
+    --heading-text: white;
+    --card-background: white;
+    --full-star:#fdcc0d;
+    --half-star:#fdcd0d7e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+
+    background: var(--background);
+}
+
+.heading {
+    text-align: center;
+    color: var(--heading-text);
+    font-size: 3rem;
+}
+
+.testimonials {
+    min-height: 100%;
+    padding: 50px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cards {
+    width: 290px;
+    height: 250px;
+
+    border-radius: 10px;
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    background-color: var(--card-background);
+
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.profile {
+    height: 80px;
+    width: 80px;
+
+    background-color: var(--card-background);
+
+    border-radius: 50%;
+
+    padding: 8px;
+
+    position: absolute;
+    left: 180px;
+    top: -25px;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.role {
+    color: rgb(167, 164, 164);
+    font-family: 'Poppins', sans-serif;
+}
+
+.content .review {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0px;
+}
+
+.stars .light {
+    color: var(--half-star);
+}
+
+.yellow {
+    color: var(--full-star);
+}

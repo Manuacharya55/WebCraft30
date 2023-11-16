@@ -9,3 +9,4 @@
 |Day-6| Responsive Navbar | [Demo](https://manuacharya55.github.io/WebCraft30/Day-6/)|
 |Day-7| Pricing Table |  [Demo](https://manuacharya55.github.io/WebCraft30/Day-7/)|
 |Day-8| Tribute Page | [Demo](https://manuacharya55.github.io/WebCraft30/Day-8/)|
+|Day-9| Testimonial Card | [Demo](https://manuacharya55.github.io/WebCraft30/Day-9/)|

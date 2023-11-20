@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&family=Open+Sans:wght@500&family=Poppins:wght@200;300&family=Quicksand&display=swap');
+
+:root{
+    --background-color:#0D6EFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    width: 100%;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background-color);
+}
+
+.form-holder {
+    max-width: 800px;
+    width: 800px;
+
+    display: flex;
+
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-holder img {
+    border-radius: 25px 0px 0px 25px;
+    width: 300px;
+    object-fit: cover;
+}
+
+form {
+    width: 100%;
+    padding: 30px;
+
+    color: #ccc;
+}
+
+label {
+    margin-left: 10px;
+}
+
+h1{
+    color: black;
+    font-weight: 900;
+}
+
+.input-text {
+    width: 100%;
+    padding: 0px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    height: 45px;
+    border: 1px solid #ccc;
+
+    border-radius: 25px;
+}
+
+input::placeholder,textarea::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: #ccc;
+    font-size: 15px;
+}
+
+input:focus {
+    border: 2px solid var(--background-color);
+}
+
+textarea {
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    resize: none;
+}
+
+button {
+    padding: 12px;
+    width: 100%;
+    background-color: var(--background-color);
+    border:none;
+    color: white;
+    font-size: 17px;
+    border-radius: 25px;
+}
+
+
+/* responsive */
+@media (max-width:600px) {
+
+    .form-holder {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .form-holder img {
+        width: 100%;
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .input-text{
+        height: 35px;
+    }
+}

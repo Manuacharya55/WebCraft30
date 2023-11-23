@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Slider</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon-holder"></div>
+        <h1 class="pricing"></h1>
+
+        <input type="range" name="" id="price-slider" maxlength="100" minlength="0" value="0">
+
+    </div>
+
+    <script>
+        const priceSlider = document.querySelector('#price-slider');
+        const pricing = document.querySelector('.pricing');
+        const icon = document.querySelector('.icon-holder');
+        
+        // Set initial icon
+        icon.innerHTML = '<i class="fa-solid fa-ticket"></i>';
+        pricing.textContent = priceSlider.value + ` rs`;
+
+        priceSlider.addEventListener('input', () => {
+            const priceValue = priceSlider.value;
+            pricing.textContent = priceValue * 2 + ` rs`;
+
+            // Update icon based on the price range
+            iconDisplay(priceValue);
+        });
+
+        function iconDisplay(value) {
+            if (value > 0 && value <= 15) {
+                icon.innerHTML = '<i class="fa-solid fa-ticket"></i>';
+            } else if (value > 15 && value <= 25) {
+                icon.innerHTML = '<i class="fa-solid fa-bag-shopping"></i>';
+            } else if (value > 25 && value <= 50) {
+                icon.innerHTML = '<i class="fa-solid fa-briefcase"></i>';
+            } else if (value > 50 && value <= 75) {
+                icon.innerHTML = '<i class="fa-solid fa-suitcase-rolling"></i>';
+            } else if (value > 75 && value <= 100) {
+                icon.innerHTML = '<i class="fa-solid fa-cart-flatbed-suitcase"></i>';
+            }
+        }
+    </script>
+</body>
+
+</html>

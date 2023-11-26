@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@100;200;300&display=swap');
+
+:root{
+    --background-color:#ffbd8b;
+    --text-color:#ffffff;
+    --card-text:#393838;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background-color);
+
+}
+
+.weather-card {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(--text-color);
+}
+
+.image-holder {
+    width: 100%;
+    height: 250px;
+    padding: 25px;
+    border-radius: 10px;
+
+    background-image: url('https://img.freepik.com/free-vector/urban-city-background-video-conferencing_52683-45469.jpg?size=626&ext=jpg&ga=GA1.1.903860732.1684111098&semt=ais');
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    color: var(--text-color);
+}
+
+.degree-celcius {
+    font-size: 3.4rem;
+    font-weight: 900;
+}
+
+.country-name {
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+}
+
+.text-holder {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-holder span {
+    display: block;
+    color: var(--card-text);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.text-holder img {
+    float: right;
+    position: absolute;
+    top: 65px;
+    right: 45px;
+    mix-blend-mode: multiply;
+    transform: scale(2);
+}
+
+.date {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--card-text);
+}

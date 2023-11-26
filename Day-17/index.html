@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weathercard</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+    </div>
+
+    <script>
+        const url = 'https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13';
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '09190beac5mshf7ecf4a821928fdp17f875jsn06aee8ad9652',
+                'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+            }
+        };
+
+
+        // extracts the data required from the API json data
+        function collectData(result){
+                const current = result["current"];
+                const text = current["condition"].text;
+                const humidity = current.humidity;
+                const celcius = current["temp_c"];
+                const lastupdated = current["last_updated"];
+                const country = result["location"].country;
+                const city = result["location"].name;
+                const weatherimg = current["condition"].icon;
+                bindData(celcius,country,lastupdated,city,text,weatherimg,humidity);
+        } 
+
+        // binds the extracted data into the html container
+        function bindData(celcius,country,lastupdated,city,text,weatherimg,humidity){
+            const Weathercard = `<div class="weather-card">
+            <div class="image-holder">
+                <span class="degree-celcius">
+                    ${celcius} °C
+                </span>
+
+                <span class="country-name">
+                    ${country}
+                </span>
+            </div>
+            <div class="text-holder">
+                <span class="date">${lastupdated}</span>
+                <span class="city-name">${city}</span>
+                <span class="text">${text}</span>
+                <img src="${weatherimg}" alt="weather-img">
+                <span class="humidity">${humidity} G.m -3</span>
+            </div>
+        </div>`
+
+            document.querySelector('.container').innerHTML = Weathercard;
+        }
+
+
+        // API connection code
+        const fetchdata = async () => {
+            try {
+                const response = await fetch(url, options);
+                const result = await response.json();
+
+                collectData(result)
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        fetchdata()
+
+    </script>
+</body>
+
+</html>

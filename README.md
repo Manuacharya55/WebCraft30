@@ -18,3 +18,5 @@
 |Day-15| E-commerce Product Card | [Demo](https://manuacharya55.github.io/WebCraft30/Day-15/)|
 |Day-16| Range Slider | [Demo](https://manuacharya55.github.io/WebCraft30/Day-16/)|
 |Day-17| Weather Card | [Demo](https://manuacharya55.github.io/WebCraft30/Day-17/)|
+|Day-18| Countdown Timer | [Demo](https://manuacharya55.github.io/WebCraft30/Day-18/)|
+|Day-19| Modals | [Demo](https://manuacharya55.github.io/WebCraft30/Day-19/)|

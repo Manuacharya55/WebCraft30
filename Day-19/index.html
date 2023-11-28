@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <button class="modal-popup">Click here</button>
+        <div class="modal">
+            <i class="fa-solid fa-check"></i>
+            <h1>Thank You</h1>
+            <button class="close">close</button>
+        </div>
+    </div>
+
+    <script>
+        const popup = document.querySelector('.modal-popup');
+        const modal = document.querySelector('.modal');
+        const close = document.querySelector('.close');
+
+        popup.addEventListener('click',()=>{
+            modal.style.transform = "translateY(0%) scale(1)";
+        })
+
+        close.addEventListener('click',()=>{
+            modal.style.transform = "translateY(-300%) scale(0)";
+        })
+
+
+    </script>
+</body>
+</html>

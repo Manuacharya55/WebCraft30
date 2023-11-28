@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="time-holder flex days"></div>
+        <div class="time-holder flex hours"></div>
+        <div class="time-holder flex minutes"></div>
+        <div class="time-holder flex seconds"></div>
+    </div>
+
+
+
+    <script>
+        const endDate = new Date("March 18,2024 19:57:05").getTime();
+
+
+        const spandays = document.querySelector('.days');
+        const spanhours = document.querySelector('.hours');
+        const spanminutes = document.querySelector('.minutes');
+        const spanseconds = document.querySelector('.seconds');
+
+
+
+
+        setInterval(() => {
+            const todaysDate = new Date().getTime();
+            let remainingDays = endDate - todaysDate;
+
+            // formula to calculate days;
+            let daysRemaining = Math.floor(remainingDays / (1000 * 60 * 60 * 24));
+            // formula to calculate remaining hours
+            let hoursRemaining = Math.floor((remainingDays % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            // formula to calculate remaining minutes
+            let minutesRemaining = Math.floor((remainingDays % (1000 * 60 * 60)) / (1000 * 60));
+            // formula to calculate remaining seconds
+            let secondsRemaining = Math.floor((remainingDays % (1000 * 60)) / 1000);
+
+            appendData(daysRemaining, hoursRemaining, minutesRemaining, secondsRemaining);
+
+        }, 1000)
+
+        function appendData(days, hours, minutes, seconds) {
+            spandays.innerHTML = `<span class="timeremaining">${days}</span>  <span class="time">Days</span>`
+            spanhours.innerHTML = `<span class="timeremaining">${hours}</span>  <span class="time">Hours</span>`
+            spanminutes.innerHTML = `<span class="timeremaining">${minutes}</span>  <span class="time">Minutes</span>`
+            spanseconds.innerHTML = `<span class="timeremaining">${seconds}</span>  <span class="time">Seconds</span>`
+        }
+    </script>
+</body>
+
+</html>

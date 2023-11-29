@@ -20,3 +20,4 @@
 |Day-17| Weather Card | [Demo](https://manuacharya55.github.io/WebCraft30/Day-17/)|
 |Day-18| Countdown Timer | [Demo](https://manuacharya55.github.io/WebCraft30/Day-18/)|
 |Day-19| Modals | [Demo](https://manuacharya55.github.io/WebCraft30/Day-19/)|
+|Day-20| Animated Button | [Demo](https://manuacharya55.github.io/WebCraft30/Day-20/)|

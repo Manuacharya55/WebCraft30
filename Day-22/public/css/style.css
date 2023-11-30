@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background-color: #ed1313;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion {
+    max-width: 900px;
+    width: 100%;
+    max-height: 70px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.accordion:hover {
+    max-height: 500px;
+}
+
+.accordion:hover i {
+    transform: rotate(90deg);
+    transition: 0.5s ease-in-out;
+    color: #ed1313;
+}
+
+.accordion_label {
+    width: 100%;
+    height: 60px;
+    padding:0px 10px;
+    border-radius: 3px;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.accordion-content {
+    width: 100%;
+    padding: 10px;
+    color: #626262;
+}

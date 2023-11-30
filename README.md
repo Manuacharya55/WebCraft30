@@ -21,3 +21,5 @@
 |Day-18| Countdown Timer | [Demo](https://manuacharya55.github.io/WebCraft30/Day-18/)|
 |Day-19| Modals | [Demo](https://manuacharya55.github.io/WebCraft30/Day-19/)|
 |Day-20| Animated Button | [Demo](https://manuacharya55.github.io/WebCraft30/Day-20/)|
+|Day-21| Blog Post Layout | [Demo](https://manuacharya55.github.io/WebCraft30/Day-21/)|
+|Day-22| FAQ Acoordion | [Demo](https://manuacharya55.github.io/WebCraft30/Day-22/)|

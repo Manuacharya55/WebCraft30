@@ -24,3 +24,4 @@
 |Day-21| Blog Post Layout | [Demo](https://manuacharya55.github.io/WebCraft30/Day-21/)|
 |Day-22| FAQ Accordion | [Demo](https://manuacharya55.github.io/WebCraft30/Day-22/)|
 |Day-23| Image Slider | [Demo](https://manuacharya55.github.io/WebCraft30/Day-23/)|
+|Day-24| Contact Card | [Demo](https://manuacharya55.github.io/WebCraft30/Day-24/)|

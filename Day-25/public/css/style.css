@@ -9,9 +9,8 @@
 html,
 body {
     width: 100%;
-    /* min-height: 100vh; */
     height: 100vh;
-   
+   background-color: #ea8606;
 }
 
 .container {
@@ -19,7 +18,6 @@ body {
     min-height: 100vh;
     height: 100%;
     padding: 15px;
-    background-color: #ea8606;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&family=Open+Sans:wght@500&family=Poppins:wght@200;300;400&family=Quicksand&family=Roboto+Slab:wght@700&display=swap');
+
+:root {
+    --left-div-color: rgb(24, 70, 80);
+    --left-div: rgb(184, 233, 249);
+    --font-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #ccc;
+}
+
+.resume-holder {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.left-div {
+    width: 35%;
+    padding: 25px;
+    background-color: var(--left-div-color);
+}
+
+.right-div {
+    background-color: white;
+}
+
+.side-heading {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+.left-div .side-heading {
+    color: var(--font-color);
+}
+
+.right-div .side-heading {
+    color: var(--left-div-color);
+}
+
+
+/* profile designing */
+.left-div .image-holder {
+    padding: 20px 0px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-div .image-holder img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.left-div .image-holder .name {
+    color: var(--font-color);
+}
+
+.left-div .image-holder .role {
+    color: var(--font-color);
+}
+
+
+/* contact info */
+.left-div .contact-info {
+    width: 100%;
+    padding: 25px 0px;
+}
+
+.left-div .contact-info span {
+    display: block;
+    color: var(--font-color);
+}
+
+.left-div .contact-info i {
+    color: var(--left-div);
+}
+
+
+/* education info */
+.left-div .education-info {
+    padding: 25px 0px;
+}
+
+.left-div .education-info ul {
+    list-style: none;
+}
+
+.left-div .education-info li {
+    margin: 10px 0px;
+}
+
+.left-div .education-info li span {
+    display: block;
+    color: var(--font-color);
+}
+
+.left-div .education-info .year {
+    color: var(--left-div);
+    font-weight: 600;
+}
+
+
+/* language info */
+.left-div .language-info {
+    padding: 25px 0px;
+}
+
+.left-div .language-info span {
+    display: block;
+    color: var(--font-color);
+}
+
+.percentage {
+    width: 100%;
+    height: 10px;
+    margin: 10px 0px;
+    border-radius: 25px;
+    background-color: #171717;
+    position: relative;
+}
+
+.percentage::before {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: var(--left-div);
+}
+
+
+/* designing right div */
+.right-div {
+    width: 65%;
+    height: 100%;
+}
+
+
+/* profile */
+.right-div .profile {
+    padding: 25px;
+}
+
+.right-div .profile span {
+    display: block;
+}
+
+
+/* experience info */
+.right-div .experience-info {
+    width: 100%;
+    padding: 25px;
+}
+
+.right-div .experience-info table {
+    width: 100%;
+}
+
+.right-div .experience-info tr {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+
+.right-div .experience-info td span {
+    display: block;
+}
+
+.right-div .experience-info .year {
+    font-weight: 600;
+}
+
+.right-div .experience-info .role {
+    font-weight: 600;
+    color: var(--left-div-color);
+}
+
+
+/* skisll info */
+.right-div .skills-info {
+    padding: 25px;
+}
+
+.right-div .skills-info span {
+    display: block;
+}
+
+.right-div .skills-info .percentage {
+    background-color: #ccc;
+}
+
+/* interests info */
+.right-div .interests-info {
+    padding: 25px;
+}
+
+.right-div .interests-info span i {
+    color: var(--left-div);
+    margin: 0px 10px;
+}
+
+@media (max-width:700px) {
+
+    html,
+    body,
+    .container,
+    .resume-holder,
+    .left-div,
+    .right-div {
+        height: auto;
+        width: 100%;
+    }
+
+    .resume-holder {
+        flex-direction: column;
+    }
+
+    .right-div .experience-info tr {
+        margin: 25px 0px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .interests-info span {
+        margin: 10px 0px;
+        display: block;
+    }
+}

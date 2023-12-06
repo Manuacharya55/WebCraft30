@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --gradient-one:#212e32;
+    --gradient-two:#212e32;
+    --text-color:#212e32;
+    --content-background-color:#ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(to bottom left,var(--gradient-one),var(--gradient-two));
+
+    color: var(--text-color);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    width: 420px;
+    height: 320px;
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+
+    display: flex;
+    position: relative;
+    background-color: var(--content-background-color);
+}
+
+.profile-card .image-div{
+    width: 30%;
+    height: 100%;
+
+    background: url('https://w0.peakpx.com/wallpaper/503/803/HD-wallpaper-sports-car-car-black-street.jpg');
+    background-repeat: no-repeat;
+    background-position: 85% 60%;
+}
+
+.profile-card .content-div{
+    width: 70%;
+    height: 100%;
+    padding: 25px;
+}
+
+.profile-card .content-div h1{
+    margin: 80px 0px 20px 0px;
+}
+
+.profile-card .content-div .icons{
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.profile-card .content-div .icons i{
+    margin: 0px 10px;
+    font-size: 1.3rem;
+}
+
+.profile-card .content-div .profile-image{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--content-background-color);
+
+    position: absolute;
+    top: 10px;
+    left: 65px;
+}
+
+.profile-card .content-div .profile-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+@media (max-width:420px){
+    
+    .container{
+        padding: 10px;
+    }
+    .profile-card{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .profile-card .image-div{
+        width: 100%;
+        height: 150px;
+
+        background-size: cover;
+    }
+
+    .profile-card .content-div{
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-card .content-div h1{
+        margin-top: 30px;
+    }
+
+    .profile-card .content-div .profile-image{
+        left: 175px;
+        top: 110px;
+    }
+}

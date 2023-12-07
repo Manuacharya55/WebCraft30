@@ -51,11 +51,11 @@ html,body{
 .signup-form .form-holder{
     width: 60%;
     height: 100%;
-    padding: 50px 15px;
+    padding: 25px 15px;
 }
 
 .signup-form .form-holder h1{
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .signup-form .form-holder ul {

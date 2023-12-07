@@ -29,3 +29,4 @@
 |Day-26| Online Resume | [Demo](https://manuacharya55.github.io/WebCraft30/Day-26/)|
 |Day-27| Portfolio Filter | [Demo](https://manuacharya55.github.io/WebCraft30/Day-27/)|
 |Day-28| Profile Card | [Demo](https://manuacharya55.github.io/WebCraft30/Day-28/)|
+|Day-29| Newsletter Signup Form | [Demo](https://manuacharya55.github.io/WebCraft30/Day-29/)|

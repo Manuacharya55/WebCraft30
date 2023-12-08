@@ -1,4 +1,20 @@
 # WebCraft30
+
+Welcome to WebCraft30, a thrilling 30-day coding adventure where creativity meets code! 🚀✨ Immerse yourself in the dynamic world of web development as we embark on a journey through HTML and CSS.
+
+Each day brings a new project, carefully crafted to challenge and elevate your skills.WebCraft30 is your daily dose of hands-on coding experience. Whether you're a seasoned developer looking to sharpen your abilities or a beginner eager to dive into the world of web design, this series has something for everyone.
+
+Explore the artistry of web development as we tackle 30 unique projects, each building upon the last. Unleash your imagination, experiment with cutting-edge techniques, and watch as your coding prowess evolves with every commit.
+
+🌐 What to Expect:
+- Daily projects that cover a spectrum of web development concepts.
+- Opportunities to customize and expand upon each project.
+
+🚀 Why WebCraft30:
+- Accelerate your HTML and CSS skills through consistent practice.
+- Gain practical insights into building modern, engaging web interfaces.
+- Foster a creative coding mindset with diverse and exciting projects.
+
 | DAY | PROJECT NAME | PREVIEW |
 |-----|--------------|---------|
 |Day-1| Simple Parallax Website | [Demo](https://manuacharya55.github.io/WebCraft30/Day-1/)|
@@ -30,3 +46,4 @@
 |Day-27| Portfolio Filter | [Demo](https://manuacharya55.github.io/WebCraft30/Day-27/)|
 |Day-28| Profile Card | [Demo](https://manuacharya55.github.io/WebCraft30/Day-28/)|
 |Day-29| Newsletter Signup Form | [Demo](https://manuacharya55.github.io/WebCraft30/Day-29/)|
+|Day-30| Dashboard Design | [Demo](https://manuacharya55.github.io/WebCraft30/Day-30/)|
